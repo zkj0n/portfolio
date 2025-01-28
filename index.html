@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mi portfolio">
+
+
+    <title>portfolio</title>
+
+    <!-- boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    
+    <!-- font awesome (iconos) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- hoja de estilos personal -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- cabecera -->
+    <header class="navbar navbar-expand-md navbar-dark bg-dark sticky-top shadow">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="#">mi portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarnav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">sobre m&iacute;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#opiniones">opiniones</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- contenedor principal -->
+    <main class="container-fluid p-5">
+
+        <!-- sobre mí -->
+        <section class="row w-75 bg-light shadow p-2 rounded"  id="sobre-mi">
+            <article class="row col">
+                <p class="h1">sobre m&iacute;</p>
+                <p class="fs-6"> ¡hola!, soy jon, un desarrollador de aplicaciones web espacializado en el apartado
+                    de frontend, siendo uno de mis grandes fuertes el diseño web y el codigo javascript. adem&aacute;s
+                    tambi&eacute;n tengo conocimientos en el backend, trabajando con tecnologias como java, jstl y mysql.
+                    siempre estoy interesado en aprender nuevas tegnologias para seguir mejorando m&aacute;s mi desarrollo. 
+                </p>
+            </article>
+
+            <img src="img/sobre-mi.gif" alt="" class="col-md-6 col-12 img-fluid rounded-circle">
+        </section>
+
+        <!-- #proyectos -->
+        <section class="row mt-3 bg-primary p-2 rounded shadow" id="proyectos">
+            <p class="h1 text-center text-white">proyectos</p>
+        
+            <!-- proyecto 1 -->
+            <article class="col-lg-4 col-md-6 col-12 mb-2">
+                <div class="card shadow h-100 d-flex flex-column">
+                    <img src="img/proyectos/p1.png" class="card-img-top" alt="purble place">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-title h5">purble place</p>
+                        <p class="card-text flex-grow-1 fs-6">
+                            este proyecto trata sobre un juego en el que tienes que imitar
+                            una la forma que se te marca, esta aplicación fue diseñada por mi compañero y yo,
+                            haciendo de esta forma crear este maravilloso y entretenido juego.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        
+            <!-- proyecto 2 -->
+            <article class="col-lg-4 col-md-6 col-12 mb-2">
+                <div class="card shadow h-100 d-flex flex-column">
+                    <img src="img/proyectos/p2.png" class="card-img-top" alt="atope extreme&ntilde;o">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-title h5">atope extreme&ntilde;o</p>
+                        <p class="card-text flex-grow-1 fs-6">
+                            en esta página web fui contratado para realizar un comercio online sobre
+                            vinos, quesos y otros productos extreme&ntilde;os. la web es completamente responsiva y tiene
+                            varios apartados variados para poder registrarse, iniciar sesi&oacute;n y realizar tus compras.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        
+            <!-- proyecto 3 -->
+            <article class="col-lg-4 col-md-6 col-12 mb-2">
+                <div class="card shadow h-100 d-flex flex-column">
+                    <img src="img/proyectos/p3.png" class="card-img-top" alt="spotify">
+                    <div class="card-body d-flex flex-column">
+                        <p class="card-title h5">spotify</p>
+                        <p class="card-text flex-grow-1 fs-6">
+                            aqu&iacute; está una de mis grandes haza&ntilde;as. para nuestra tarea final de mi
+                            segundo trimestre de mi grado superior nos encargaron hacer un clon de la famosa aplicaci&oacute;n
+                            de m&uacute;sica spotify, en la cual necesitamos acceder a una api para recopilar, subir y eliminar canciones.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- contacto -->
+        <section class="row mt-3 p-2 bg-light rounded shadow" id="contacto">
+            
+            <p class="h1 text-center">contacto</p>
+
+            <form action="index.html" method="get">
+                <!-- nombre -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="nombre">
+                    <label for="nombre">
+                        <i class="fas fa-user"></i> 
+                        nombre
+                    </label>
+                </div>
+                
+                <!-- email -->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="correo electr&oacute;nico" aria-describedby="email"/>
+                    <label for="email" class="form-label">
+                        <i class="fa fa-inbox"></i>
+                        correo electr&oacute;nico
+                    </label>
+                
+                </div>
+
+                <!-- edad -->
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="edad" placeholder="edad" aria-describedby="edad"/>
+                    <label for="edad" class="form-label">
+                        <i class="fab fa-cloudscale"></i>
+                        edad
+                    </label>
+                </div>
+
+                <!-- mensaje -->
+                <div class="form-floating mb-3">
+                    <textarea id="mensaje" class="form-control h-auto" rows="4" placeholder="Mensaje"></textarea>
+                    <label for="mensaje" class="form-label">
+                        <i class="fa fa-paper-plane"></i>
+                        mensaje
+                    </label>
+                </div>
+
+                <!-- enviar -->
+                <button class="btn btn-primary" type="submit">enviar</button>
+
+            </form>
+
+        </section>
+
+        <!-- opiniones -->
+        <section class="row mt-3 p-2 rounded shadow" id="opiniones">
+            <article id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Fase 1 -->
+                    <div class="carousel-item active text-center">
+                        <img src="img/carousel/u1.png" class="d-block w-25 mx-auto rounded-circle" alt="Imagen 1">
+                        <div class="d-block">
+                            <p class="h4">waddle dee</p>
+                            <p>"purble place me pareci&oacute; un juego muy entretenido, lo recomiendo much&iacute;simo"</p>
+                        </div>
+                    </div>
+
+                    <!-- Fase 2 -->
+                    <div class="carousel-item text-center">
+                        <img src="img/carousel/u2.png" class="d-block w-25 mx-auto rounded-circle" alt="Imagen 1">
+                        <div class="d-block">
+                            <p class="h4">meta kight</p>
+                            <p>"¡mejor que el original!, este spotify es perfecto para subir tus propias canciones"</p>
+                        </div>
+                    </div>
+
+                    <!-- Fase 3 -->
+                    <div class="carousel-item text-center">
+                        <img src="img/carousel/u3.png" class="d-block w-25 mx-auto rounded-circle" alt="Imagen 1">
+                        <div class="d-block">
+                            <p class="h4">king dedede</p>
+                            <p>"atope exteme&ntilde;o me encanto, la web es muy intuitiva y f&aacute;cil de utilizar"</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Controles del Carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">siguiente</span>
+                </button>
+            </article>
+        </section>
+        
+
+    </main>
+
+    <!-- pie -->
+    <footer class="bg-dark d-flex flex-column align-items-center p-1">
+        <p class="text-white mb-0 fs-6">
+            <i class="far fa-copyright"></i>
+             mi portfolio. todos los derechos reservados.
+        </p>
+        <a href="https://github.com/zkj0n" class="text-center text-secondary fs-5" target="_blank">
+            <i class="fab fa-github"></i>
+            github
+        </a>
+    </footer>
+
+    <!-- boostrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
